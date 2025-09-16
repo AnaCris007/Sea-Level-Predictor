@@ -9,7 +9,7 @@ def draw_plot():
     # Create scatter plot
     plt.scatter(df['Year'], df['CSIRO Adjusted Sea Level']  )
 
-    #https://www.w3schools.com/python/python_ml_linear_regression.asp
+    # https://www.w3schools.com/python/python_ml_linear_regression.asp
     # Create first line of best fit
     slope, intercept, r, p, std_err = linregress(df['Year'], df['CSIRO Adjusted Sea Level'])
 
@@ -32,7 +32,7 @@ def draw_plot():
     slope2, intercept2, r2, p2, std_err2 = linregress(df_recent['Year'], df_recent['CSIRO Adjusted Sea Level'])
     listOfYears2 = list(range(2000, 2051))
     def CalculusOfTheLine2(x):
-        slope2 * x + intercept2
+        return slope2 * x + intercept2
     y2 = list(map(CalculusOfTheLine2, listOfYears2))
     plt.plot(listOfYears2, y2, color = 'red')
 
