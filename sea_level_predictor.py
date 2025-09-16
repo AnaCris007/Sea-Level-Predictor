@@ -64,9 +64,10 @@ def draw_plot():
 
     # Create second line of best fit
     # I tried this first approach, but it didn't work because the array shapes were incompatible for broadcasting.
-    # Since the 'CSIRO Adjusted Sea Level' column is longer than the 'Year' column when I try to use years from 2000 onward,
-    # the shapes don't match.
-    # slope2, intercept2, r2, p2, std_err2 = linregress(list(range(2000, df['Year'].max())), df['CSIRO Adjusted Sea Level'])
+    # Since the 'CSIRO Adjusted Sea Level' column is longer than the 'Year' column when I try to use 
+    # years from 2000 onward, the shapes don't match.
+    # slope2, intercept2, r2, p2, std_err2 = linregress(list(range(2000, df['Year'].max())), 
+    # df['CSIRO Adjusted Sea Level'])
 
     # To fix this, I filtered the original dataframe to only include rows where
     # the 'Year' column is greater than or equal to 2000. I'm also creating another dataframe
