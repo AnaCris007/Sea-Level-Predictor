@@ -47,8 +47,5 @@ This will create a file called `sea_level_plot.png` in the project directory.
 ## Data Source
 The dataset is from the [Environmental Protection Agency (EPA)](https://www.epa.gov/climate-indicators/climate-change-indicators-sea-level).
 
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 ## Credits
 Developed by AnaCris007.
