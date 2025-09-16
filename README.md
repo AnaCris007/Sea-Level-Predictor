@@ -6,7 +6,7 @@ Predict and visualize sea level rise using historical data and linear regression
 ## Overview
 This project analyzes a dataset of global average sea level change since 1880 and predicts sea level change through the year 2050. Using Python, Pandas is used to import and process the data from `epa-sea-level.csv`. The project creates a scatter plot of the data using matplotlib, with the Year column as the x-axis and the CSIRO Adjusted Sea Level column as the y-axis.
 
-The line of best fit for all available data (1880–present) is calculated using the `linregress` function from `scipy.stats` and plotted through the year 2050 to predict future sea level rise. Additionally, a second line of best fit is calculated using only data from the year 2000 onward, also extended to 2050, to show recent trends. The resulting plot includes both regression lines, clear axis labels, and a descriptive title, and is saved as a PNG image. This project helps visualize historical trends and possible future scenarios for global sea level rise.
+The line of best fit for all available data (1880–2013) is calculated using the `linregress` function from `scipy.stats` and plotted through the year 2050 to predict future sea level rise. Additionally, a second line of best fit is calculated using only data from the year 2000 onward, also extended to 2050, to show recent trends. The resulting plot includes both regression lines, clear axis labels, and a descriptive title, and is saved as a PNG image. This project helps visualize historical trends and possible future scenarios for global sea level rise.
 
 ## Features
 - Reads and processes sea level data from a CSV file
